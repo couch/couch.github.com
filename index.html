@@ -28,10 +28,10 @@
 			margin: 0;
 		}
 		body {
-			background: #333;
+			background: #fff;
 		}
 		p {
-			color: #fff;
+			color: #666;
 			font-family: Helvetica, Arial, sans-serif;
 			font-size: 16px;
 			line-height: 24px;
@@ -39,14 +39,20 @@
 			-webkit-font-smoothing: antialiased;
 		}
 		a {
-			color: #fff;
+			color: #555;
 			font-weight: bold;
 			text-decoration: none;
-			border-bottom: 1px solid rgba(255,255,255,0.3);
+			border-bottom: 1px solid rgba(80, 94, 131, 0.3);
+
+			-webkit-transition: border .3s;
+			transition: border .3s;
 		}
 		a:hover {
-			color: #95a5bf;
-			border-bottom: 1px solid rgba(255,255,255,1);
+			color: #505e83;
+			border-bottom: 1px solid rgba(80, 94, 131, 1);
+
+			-webkit-transition: border .3s;
+			transition: border .3s;
 		}
 
 		::-webkit-selection {
@@ -74,8 +80,19 @@
 			right: 10px;
 		}
 		#credit p {
+			color: #EEE;
 			font-size: 10px;
 			margin-bottom: 0px;
+			text-shadow: 0px 0px 5px rgba(80, 94, 131, 1);
+		}
+
+		#credit a {
+			color: #FFF;
+			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		#credit a:hover {
+			border-bottom: 1px solid rgba(255, 255, 255, 1);
 		}
 	</style>
 </head>
@@ -83,7 +100,7 @@
 <body>
 
 	<div id="about">
-		<p><strong>William Couch</strong> is a developer, designer, and photographer in San&nbsp;Francisco. He works as a product engineer on the Web team at <a href="http://twitter.com/">Twitter</a>. A fascination with storytelling and its potential with technology is what drives his long-standing obsession to create. His work and history can be found on his <a href="http://cargocollective.com/couch" rel="me">portfolio</a> and <a href="http://resume.williamcouch.com" rel="me">r&eacute;sum&eacute;</a> respectively.</p>
+		<p><strong>Bill Couch</strong> is a developer, designer, and photographer in San&nbsp;Francisco. He works as a product engineer on the Web team at <a href="http://twitter.com/">Twitter</a>. A fascination with storytelling and its potential with technology is what drives his long-standing obsession to create. His work and history can be found on his <a href="http://cargocollective.com/couch" rel="me">portfolio</a> and <a href="http://resume.williamcouch.com" rel="me">r&eacute;sum&eacute;</a> respectively.</p>
 
 		<p>
 			He lets his mind speak on <a href="https://twitter.com/couch" rel="me">Twitter</a>,
@@ -99,7 +116,7 @@
 
 		<p>
 			Born in Colorado, and proudly raised in Michigan,
-			he's an enthusiast of <a href="http://churchkeydc.com">craft beer</a>,
+			he's an enthusiast of <a href="http://www.mikkellerbar.com/">craft beer</a>,
 			shares a kinship with his <a href="http://salsacycles.com/bikes/colossal">bike</a>,
 			reveres the <a href="http://www.pictorymag.com/showcases/in-deep/#pictory-2080">Great Lakes</a>,
 			and treasures good conversation.
@@ -131,14 +148,14 @@
 	</div>
 
 	<div id="credit">
-		<p>Photograph by <a href="http://dustindiaz.com">Dustin Diaz</a>.</p>
+		<p>Portrait by <a href="http://ikedeani.com/">Ike Edeani</a>.</p>
 	</div>
 
 	<!--include jquery & backstretch-->
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 	<script src="js/jquery.backstretch.min.js"></script>
 	<script type="text/javascript">
-		$.backstretch("img/couch_twitter.jpg", {speed: 1000});
+		$.backstretch("img/couch_offscreen.jpg", {speed: 1000});
 	</script>
 
 	<script type="text/javascript">
