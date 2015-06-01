@@ -1,173 +1,151 @@
 <!doctype html>
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-	<title>william couch</title>
-	<meta name="description" content="William Couch is a developer, designer, and photographer in San Francisco, California."/>
-	<meta name="keywords" content="William Couch, Bill Couch, design, photography, developer, engineer, development, JavaScript, TWitter, interaction design, data visualization, storytelling, craft beer, biking, Great Lakes, Michigan" />
+  <title>Bill Couch</title>
+  <meta name="description" content="William Couch is a product engineer, designer, and photographer in San Francisco, California."/>
+  <meta name="keywords" content="William Couch, Bill Couch, design, photography, developer, engineer, development, Twitter, interaction design, cycling" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	<meta name="apple-mobile-web-app-capable" content="yes">
-	<meta name="apple-mobile-web-app-status-bar-style" content="black">
-	<link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png"/>
-	<link rel="apple-touch-startup-image" href="img/apple-touch-startup-image.png">
+  <meta http-equiv="pragma" content="no-cache" />
+  <meta name="robots" content="all" />
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <meta http-equiv="imagetoolbar" content="false" />
+  <meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=wcouch.myopenid.com" />
 
-	<meta http-equiv="pragma" content="no-cache" />
-	<meta name="robots" content="all" />
-	<meta name="MSSmartTagsPreventParsing" content="true" />
-	<meta http-equiv="imagetoolbar" content="false" />
-	<meta http-equiv="X-XRDS-Location" content="http://www.myopenid.com/xrds?username=wcouch.myopenid.com" />
+  <link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="openid.server" href="http://www.myopenid.com/server" />
+  <link rel="openid.delegate" href="http://wcouch.myopenid.com/" />
 
-	<link rel="Shortcut Icon" href="/favicon.ico" type="image/x-icon" />
-	<link rel="openid.server" href="http://www.myopenid.com/server" />
-	<link rel="openid.delegate" href="http://wcouch.myopenid.com/" />
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background: #fff;
+    }
+    p {
+      color: #FFF;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 22px;
+      -webkit-font-smoothing: antialiased;
+    }
+    a {
+      color: #FFF;
+      font-weight: bold;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(255,255,255,0.3);
 
-	<style>
-		* {
-			padding: 0;
-			margin: 0;
-		}
-		body {
-			background: #fff;
-		}
-		p {
-			color: #666;
-			font-family: Helvetica, Arial, sans-serif;
-			font-size: 16px;
-			line-height: 24px;
-			margin-bottom: 22px;
-			-webkit-font-smoothing: antialiased;
-		}
-		a {
-			color: #555;
-			font-weight: bold;
-			text-decoration: none;
-			border-bottom: 1px solid rgba(80, 94, 131, 0.3);
+      -webkit-transition: border .3s;
+      transition: border .3s;
+    }
+    a:hover {
+      color: #c0b3a4;
+      border-bottom: 1px solid rgba(192,179,164,1);
 
-			-webkit-transition: border .3s;
-			transition: border .3s;
-		}
-		a:hover {
-			color: #505e83;
-			border-bottom: 1px solid rgba(80, 94, 131, 1);
+      -webkit-transition: border .3s;
+      transition: border .3s;
+    }
 
-			-webkit-transition: border .3s;
-			transition: border .3s;
-		}
+    ::-webkit-selection {
+      background:#dd8f5b;
+    }
+    ::-moz-selection {
+      background:#dd8f5b;
+    }
+    ::selection {
+      background:#dd8f5b;
+    }
 
-		::-webkit-selection {
-			background:#81002b;
-		}
-		::-moz-selection {
-			background:#81002b;
-		}
-		::selection {
-			background:#81002b;
-		}
+    #about,
+    #credit {
+      width: 30%;
+      min-width: 300px;
+      max-width: 360px;
+      padding: 0;
+      margin: 60px auto 0 5%;
+      overflow: visible;
+    }
 
-		#about {
-			width: 30%;
-			min-width: 300px;
-			max-width: 360px;
-			padding: 0 0 0 70px;
-			margin: 60px auto 0 5% !important;
-			background: url('img/monogram.png') top left no-repeat;
-			overflow: visible;
-		}
-		#credit {
-			position: fixed;
-			bottom: 0;
-			right: 10px;
-		}
-		#credit p {
-			color: #EEE;
-			font-size: 10px;
-			margin-bottom: 0px;
-			text-shadow: 0px 0px 5px rgba(80, 94, 131, 1);
-		}
+    #credit {
+      max-width: 200px;
+      margin-top: 40px;
+    }
 
-		#credit a {
-			color: #FFF;
-			border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-		}
+    #credit p {
+      color: #EEE;
+      font-size: 12px;
+      line-height: 18px;
+    }
 
-		#credit a:hover {
-			border-bottom: 1px solid rgba(255, 255, 255, 1);
-		}
-	</style>
+    @media only screen and (max-width: 600px), (max-height: 600px) {
+      p {
+        font-size: 14px;
+        line-height: 21px;
+      }
+
+      #about,
+      #credit {
+        margin-top: 20px;
+        min-width: 200px;
+        max-width: 280px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-	<div id="about">
-		<p><strong>Bill Couch</strong> is a developer, designer, and photographer in San&nbsp;Francisco. He works as a product engineer on the Web team at <a href="http://twitter.com/">Twitter</a>. A fascination with storytelling and its potential with technology is what drives his long-standing obsession to create. His work and history can be found on his <a href="http://cargocollective.com/couch" rel="me">portfolio</a> and <a href="http://resume.williamcouch.com" rel="me">r&eacute;sum&eacute;</a> respectively.</p>
+  <div id="about">
+    <p><strong>Bill Couch</strong> is a product engineer, designer, and photographer in San&nbsp;Francisco, California. He builds the web client of <a href="https://periscope.tv">Periscope</a> at <a href="https://twitter.com/">Twitter</a>. A fascination with storytelling and its potential with technology is what drives his long-standing obsession to create. His work history can be found on his <a href="http://resume.williamcouch.com" rel="me">r&eacute;sum&eacute;</a>.</p>
 
-		<p>
-			He lets his mind speak on <a href="https://twitter.com/couch" rel="me">Twitter</a>,
-			<a href="http://couch.tumblr.com" rel="me">notes ephemera</a> and <a href="http://wllm.cc" rel="me">chronicles adventures</a> on <strong>Tumblr</strong>,
-			leaves breadcrumbs on <a href="https://foursquare.com/couch/" rel="me">Foursquare</a>,
-			shares his view on <a href="http://flickr.com/wcouch" rel="me">Flickr</a>,
-			observes through <a href="http://instagram.com/couch" rel="me">Instagram</a>,
-			listens on <a href="http://rdio.com/people/couch" rel="me">Rdio</a> and logs it with <a href="http://www.last.fm/user/iwantsomecouch" rel="me">last.fm</a>,
-			posts short films to <a href="http://vimeo.com/couch" rel="me">Vimeo</a>,
-			previews occasional work on <a href="http://dribbble.com/couch" rel="me">Dribbble</a>,
-			and notes the internet on <a href="http://pinboard.in/u:couch" rel="me">Pinboard</a>.
-		</p>
+    <p>
+      He lets his mind speak on <a href="https://twitter.com/couch" rel="me">Twitter</a>,
+      <a href="http://couch.tumblr.com" rel="me">notes ephemera</a> and <a href="http://wllm.cc" rel="me">chronicles adventures</a> on <strong>Tumblr</strong>,
+      observes through <a href="http://flickr.com/wcouch" rel="me">Flickr</a>
+      and <a href="http://instagram.com/couch" rel="me">Instagram</a>,
+      listens on <a href="http://rdio.com/people/couch" rel="me">Rdio</a> and <a href="https://open.spotify.com/user/williamcouch">Spotify</a>,
+      and logs it with <a href="http://www.last.fm/user/iwantsomecouch" rel="me">last.fm</a>,
+      posts short videos to <a href="http://vimeo.com/couch" rel="me">Vimeo</a>,
+      and notes the internet on <a href="http://pinboard.in/u:couch" rel="me">Pinboard</a>.
+    </p>
 
-		<p>
-			Born in Colorado, and proudly raised in Michigan,
-			he's an enthusiast of <a href="http://www.mikkellerbar.com/">craft beer</a>,
-			shares a kinship with his <a href="http://salsacycles.com/bikes/colossal">bike</a>,
-			reveres the <a href="http://www.pictorymag.com/showcases/in-deep/#pictory-2080">Great Lakes</a>,
-			and treasures good conversation.
-		</p>
+    <p>
+      Born in Colorado, raised in Michigan,
+      he's smitten with the West Coast,
+      shares <a href="https://instagram.com/p/1YajBmijYB">a kinship with his bike</a>,
+      reveres the <a href="http://www.pictorymag.com/showcases/in-deep/#pictory-2080">Third Coast</a>,
+      and treasures good conversation.
+    </p>
 
-		<p>
-			So,
-			<script type="text/javascript">
-	    //<![CDATA[
-	    <!--
-	    var x="function f(x){var i,o=\"\",l=x.length;for(i=l-1;i>=0;i--) {try{o+=x.c" +
-	    "harAt(i);}catch(e){}}return o;}f(\")\\\"function f(x,y){var i,o=\\\"\\\\\\\""+
-	    "\\\\,l=x.length;for(i=0;i<l;i++){if(i==73)y+=i;y%=127;o+=String.fromCharCod" +
-	    "e(x.charCodeAt(i)^(y++));}return o;}f(\\\"\\\\-%(9 +!$\\\\\\\\177%!=!3;6qxg" +
-	    "=}6-\\\\\\\\005\\\\\\\\007_?F\\\\\\\\010\\\\\\\\007\\\\\\\\016\\\\\\\\004\\" +
-	    "\\\\\\035\\\\\\\\005Q\\\\\\\\033\\\\\\\\004\\\\\\\\002\\\\\\\\003\\\\\\\\03" +
-	    "1\\\\\\\\020\\\\\\\\0373\\\\\\\\003\\\\\\\\034\\\\\\\\032\\\\\\\\033\\\\\\\\"+
-	    "021\\\\\\\\030\\\\\\\\027\\\\\\\\030\\\\\\\\023\\\\\\\\010\\\\\\\\035h/aliY" +
-	    "$'|`~gi0R-L3,/<'\\\\\\\\177\\\\\\\\010\\\\\\\\004\\\\\\\\016\\\\\\\\017\\\\" +
-	    "\\\\013YI\\\\\\\\006VKCP\\\\\\\\\\\\\\\\V\\\"\\\\,73)\\\"(f};)lo,0(rtsbus.o" +
-	    " nruter};)i(tArahc.x=+o{)--i;0=>i;1-l=i(rof}}{)e(hctac};l=+l;x=+x{yrt{)29=!" +
-	    ")31/l(tAedoCrahc.x(elihw;lo=l,htgnel.x=lo,\\\"\\\"=o,i rav{)x(f noitcnuf\")" ;
-	    while(x=eval(x));
-	    //-->
-	    //]]>
-	    </script>
-	    .
-	 	</p>
-	</div>
+    <p>
+      So, <a href="mailto:william@williamcouch.com">say hello</a>.
+    </p>
+  </div>
 
-	<div id="credit">
-		<p>Portrait by <a href="http://ikedeani.com/">Ike Edeani</a>.</p>
-	</div>
+  <div id="credit">
+    <p>Portrait by <a href="http://rebeccapeplinski.com/">Rebecca Peplinski</a>, taken at Hurricane Point on Highway 1 on the 15th of October, 2014.</p>
+  </div>
 
-	<!--include jquery & backstretch-->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-	<script src="js/jquery.backstretch.min.js"></script>
-	<script type="text/javascript">
-		$.backstretch("img/couch_offscreen_square.jpg", {speed: 1000});
-	</script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+  <script src="js/jquery.backstretch.min.js"></script>
 
-	<script type="text/javascript">
-		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-		</script>
-		<script type="text/javascript">
-		try {
-		var pageTracker = _gat._getTracker("UA-362648-1");
-		pageTracker._trackPageview();
-		} catch(err) {}
-	</script>
+  <script type="text/javascript">
+    $.backstretch("img/couch_bigsur.jpg");
+
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+    try {
+    var pageTracker = _gat._getTracker("UA-362648-1");
+    pageTracker._trackPageview();
+    } catch(err) {}
+  </script>
 
 </body>
 </html>
